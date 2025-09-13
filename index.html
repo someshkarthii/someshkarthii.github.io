@@ -73,65 +73,68 @@
 
 
 <script>
-  // Simple project data
-  const projects = [
-    {
-      title: "Music Genre Classifier",
-      description: "An ML web application that detects a song's music genre.",
-      tools: "Python, Pytorch, Pandas, HTML, CSS",
-      img: "/assets/img/project-music-player.png",
-    },
-    {
-      title: "Commuto",
-      description: "A GIS-mapping system designed for Commuters.",
-      tools: "C++, EZGL, OSM API",
-      img: "https://www.shutterstock.com/image-vector/vector-illustration-top-view-valley-600nw-2373557389.jpg",
-    },
-    {
-      title: "RoverSnap",
-      description: "A web application that allows users to save Mars Rover Pictures.",
-      tools: "Python, Flask, SQLite3, HTML, CSS",
-      img: "https://www.shutterstock.com/image-vector/vector-flat-space-design-background-600nw-572708635.jpg",
-    }
-  ];
+  document.addEventListener("DOMContentLoaded", function () {
+    const projects = [
+      {
+        title: "Music Genre Classifier",
+        description: "An ML web application that detects a song's music genre.",
+        tools: "Python, Pytorch, Pandas, HTML, CSS",
+        img: "/assets/img/project-music-player.png",
+      },
+      {
+        title: "Commuto",
+        description: "A GIS-mapping system designed for Commuters.",
+        tools: "C++, EZGL, OSM API",
+        img: "https://www.shutterstock.com/image-vector/vector-illustration-top-view-valley-600nw-2373557389.jpg",
+      },
+      {
+        title: "RoverSnap",
+        description: "A web app that allows users to save Mars Rover Pictures.",
+        tools: "Python, Flask, SQLite3, HTML, CSS",
+        img: "https://www.shutterstock.com/image-vector/vector-flat-space-design-background-600nw-572708635.jpg",
+      }
+    ];
 
-  let shown = 0; // how many projects are displayed
-  const container = document.getElementById("projects-container");
-  const loadMoreBtn = document.getElementById("load-more");
+    // reverse so newest is first
+    const orderedProjects = projects.reverse();
 
-  function showProject(project) {
-    const div = document.createElement("div");
-    div.className = "col s12 m6 l4";
-    div.innerHTML = `
-      <div class="card">
-        <div class="card-image">
-          <img src="${project.img}" alt="${project.title}">
+    let shown = 0;
+    const container = document.getElementById("projects-container");
+    const loadMoreBtn = document.getElementById("load-more");
+
+    function showProject(project) {
+      const div = document.createElement("div");
+      div.className = "col s12 m6 l4";
+      div.innerHTML = `
+        <div class="card">
+          <div class="card-image">
+            <img src="${project.img}" alt="${project.title}">
+          </div>
+          <div class="card-content">
+            <span class="card-title">${project.title}</span>
+            <p>${project.description}</p>
+            <p><b>Tools:</b> ${project.tools}</p>
+          </div>
         </div>
-        <div class="card-content">
-          <span class="card-title">${project.title}</span>
-          <p>${project.description}</p>
-          <p><b>Tools:</b> ${project.tools}</p>
-        </div>
-      </div>
-    `;
-    container.appendChild(div);
-  }
-
-  function loadNextProject() {
-    if (shown < projects.length) {
-      showProject(projects[shown]);
-      shown++;
+      `;
+      container.appendChild(div);
     }
-    if (shown === projects.length) {
-      loadMoreBtn.style.display = "none";
+
+    function loadNextProject() {
+      if (shown < orderedProjects.length) {
+        showProject(orderedProjects[shown]);
+        shown++;
+      }
+      if (shown === orderedProjects.length) {
+        loadMoreBtn.style.display = "none";
+      }
     }
-  }
 
-  // Show the first project on page load
-  loadNextProject();
+    // show newest project on load
+    loadNextProject();
 
-  // Add click listener
-  loadMoreBtn.addEventListener("click", loadNextProject);
+    loadMoreBtn.addEventListener("click", loadNextProject);
+  });
 </script>
 
 <body>
@@ -711,5 +714,6 @@
 </body>
 
 </html>
+
 
 
