@@ -20,6 +20,10 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE)
 <img width="1899" height="985" alt="image" src="https://github.com/user-attachments/assets/ac7fe228-6ab8-4164-9c65-74e7a1b06121" />
 
 
+## Activity 3 (Changing Theme Color of Personal Website):
+<img width="1866" height="939" alt="image" src="https://github.com/user-attachments/assets/1fa9b564-10e1-4d03-bfa6-f9575321577a" />
+<img width="1866" height="939" alt="image" src="https://github.com/user-attachments/assets/c11554b2-5896-4050-9767-a153ad8f94f0" />
+<img width="1866" height="939" alt="image" src="https://github.com/user-attachments/assets/22b2de82-0c31-4add-a0ad-e8b8fbdf4bbc" />
 
 
 
