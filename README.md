@@ -31,4 +31,11 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE)
 
 
 
+## Activity 5 (Adding Dynamic Content with Javascript):
+<img width="1892" height="709" alt="image" src="https://github.com/user-attachments/assets/a02c2b74-575a-4fa4-acb8-a04ab9035884" />
+<img width="1892" height="765" alt="image" src="https://github.com/user-attachments/assets/dab7401e-3d5a-4958-a575-ecaac2a88deb" />
+<img width="1892" height="765" alt="image" src="https://github.com/user-attachments/assets/a68904bb-3278-4c6e-a7e5-cfdaef0bd8ce" />
+<img width="1892" height="765" alt="image" src="https://github.com/user-attachments/assets/7bbf28fe-f25f-4905-9307-87fa6a956362" />
+
+
 
