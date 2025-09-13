@@ -381,6 +381,10 @@ h3 {
   top: 35px;
 }
 
+.card .card-content .card-title {
+  color: black !important;
+}
+
 .card li a {
   margin-right: 0;
   color: #333;
