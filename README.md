@@ -25,6 +25,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE)
 <img width="1866" height="939" alt="image" src="https://github.com/user-attachments/assets/c11554b2-5896-4050-9767-a153ad8f94f0" />
 <img width="1866" height="939" alt="image" src="https://github.com/user-attachments/assets/22b2de82-0c31-4add-a0ad-e8b8fbdf4bbc" />
 
+## Activity 4 (Creating new section and embedding Google Maps):
+<img width="1118" height="756" alt="image" src="https://github.com/user-attachments/assets/79cdba98-ff62-4a08-9c8d-c2a6d3f5f2ae" />
+<img width="1118" height="179" alt="image" src="https://github.com/user-attachments/assets/ebf2fe2c-9031-4fb7-aad9-61ce47d8a079" />
 
 
 
